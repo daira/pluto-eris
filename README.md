@@ -11,7 +11,7 @@ with
 * p = 0x24000000000024000130e0000d7f70e4a803ca76f439266f443f9a5cda8a6c7be4a7a5fe8fadffd6a2a7e8c30006b9459ffffcd300000001
 * q = 0x24000000000024000130e0000d7f70e4a803ca76f439266f443f9a5c7a8a6c7be4a775fe8e177fd69ca7e85d60050af41ffffcd300000001
 
-Pluto is a Barreto–Naerig (BN) pairing-friendly curve, with embedding degree 12.
+Pluto is a Barreto–Naehrig (BN) pairing-friendly curve, with embedding degree 12.
 Eris is a non-pairing-friendly curve.
 
 The BN parameter for Pluto (used in pairing implementation) is:

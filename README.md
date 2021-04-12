@@ -49,6 +49,9 @@ Both curves have a 2-adicity of 32 (i.e. 2<sup>32</sup> divides p-1 and q-1), wh
 enables support for fast FFT operations, used in many zero-knowledge proving systems.
 
 The parameter u has low Hamming weight (7), to speed up pairing computations.
+It can be expressed in [2-NAF form](https://en.wikipedia.org/wiki/Non-adjacent_form) as
+-(2<sup>110</sup> + 2<sup>60</sup> + 2<sup>39</sup> + 2<sup>35</sup> - 2<sup>31</sup>)
+which has weight 5.
 
 Both curves are twist-secure to over 149 bits.
 

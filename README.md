@@ -60,6 +60,22 @@ of x<sup>α</sup> for those values as an S-box in algebraic hashes such as Posei
 Rescue.
 
 
+## Applications
+
+Half-pairing cycles are potentially useful to combine Halo-style recursion
+[[BGH2019](https://eprint.iacr.org/2019/1021)] [[BCMS2020](https://eprint.iacr.org/2020/499)]
+[[BDFG2020](https://eprint.iacr.org/2020/1536)] [[BCLMS2020](https://eprint.iacr.org/2020/1618)]
+with any protocol that uses pairings.
+
+That could include pairing-based proving systems with trusted setup such as Groth16 and
+PLONK, but it could also include schemes without trusted setup such as BLS signatures,
+some identity-based or forward-secure encryption schemes, tripartite Diffie–Hellman, and
+[[BMMTV](https://eprint.iacr.org/2019/1177)] polynomial commitments.
+
+Significant additional research and engineering work might be needed to adapt any
+particular protocol to this setting.
+
+
 ## Naming
 
 Pluto and Eris are [planets](https://www.hou.usra.edu/meetings/lpsc2017/pdf/1448.pdf)

@@ -73,7 +73,9 @@ some identity-based or forward-secure encryption schemes, tripartite Diffie–He
 [[BMMTV](https://eprint.iacr.org/2019/1177)] polynomial commitments.
 
 Significant additional research and engineering work might be needed to adapt any
-particular protocol to this setting.
+particular protocol to this setting. If you don't need the pairing, use
+[Pallas/Vesta](https://github.com/zcash/pasta) instead — it will be simpler and more
+efficient!
 
 
 ## Naming

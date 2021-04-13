@@ -23,11 +23,11 @@ The BN parameter for Pluto (used in pairing implementation) is:
 
 The size of 446 bits follows
 [recommendations by Aurore Guillevic](https://members.loria.fr/AGuillevic/pairing-friendly-curves/)
-for curves with a security level of approximately 128 bits (but any errors are my own).
+for BN curves at the 128-bit security level (but any errors are my own).
 More precisely, by using the SexTNFS cost simulator associated with [[GS2019]], we obtain
-an estimate of 131.9 bits of security for Pluto. The security margin of Eris is larger
-since attacks on the pairing are not applicable: it has a Pollard rho security level of
-221.6 bits.
+an estimate of roughly 132 bits of security for Pluto and its pairing. The security margin
+of Eris is larger since attacks on the pairing are not applicable: it has a Pollard rho
+security level of 221.6 bits.
 
 446 bits is the maximum that can be implemented in seven 64-bit limbs, with two bits
 to spare for carries, which provides a good security/efficiency trade-off. The "spare"

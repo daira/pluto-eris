@@ -24,7 +24,7 @@ The BN parameter for Pluto (used in pairing implementation) is:
 The size of 446 bits follows
 [recommendations by Aurore Guillevic](https://members.loria.fr/AGuillevic/pairing-friendly-curves/)
 for BN curves at the 128-bit security level (but any errors are my own).
-More precisely, by using the SexTNFS cost simulator associated with [[GS2019]], we obtain
+More precisely, by using the STNFS cost simulator associated with [[GS2019]], we obtain
 an estimate of roughly 132 bits of security for Pluto and its pairing. The security margin
 of Eris is larger since attacks on the pairing are not applicable: it has a Pollard rho
 security level of 221.6 bits.
@@ -121,19 +121,19 @@ The SafeCurves criteria that are *not* satisfied are, in summary:
   [Elligator Squared](https://ifca.ai/pub/fc14/paper_25.pdf), but not using Elligator 2);
 * Pluto is pairing-friendly and therefore cannot satisfy the embedding degree criterion.
 
-To check the estimated cost of a SexTNFS attack against the Pluto curve, you will need the
+To check the estimated cost of a STNFS attack against the Pluto curve, you will need the
 (experimental) software supporting the paper [[GS2019]] by Aurore Guillevic and Shashank Singh:
 
 * run ``git clone https://gitlab.inria.fr/tnfs-alpha/alpha.git`` (the resulting checkout
   must be in the ``alpha`` subdirectory of this repo).
-* run ``./check_tnfs.sh``.
+* run ``./check_stnfs.sh``.
 
-The paper refers to SexTNFS as TNFS, but the special form of the prime p and the presence
-of endomorphisms for BN curves is taken into account.
+The special form of the prime p and the presence of endomorphisms for BN curves is taken
+into account.
 
 Note that this script requires a version of Sage that uses Python 3 (unlike the other
 Sage scripts in this repo that can work with versions of Sage using either Python 2 or 3).
 It takes several hours to run, and the output is quite verbose. The estimated security
-level against SexTNFS is given by the minimum of the "total time" outputs.
+level against STNFS is given by the minimum of the "total time" outputs.
 
 [GS2019]: https://eprint.iacr.org/2019/885

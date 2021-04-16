@@ -18,6 +18,12 @@ The BN parameter for Pluto (used in pairing implementation) is:
 
 * u = -0x4000000000001000008780000000
 
+If we represent GF(p<sup>2</sup>) as GF(p)[z]/(z<sup>2</sup> + 5), then the curve
+Ep' used for G<sub>2</sub> is:
+
+* Ep' : y<sup>2</sup> = x<sup>3</sup> + (z + 3) over GF(p<sup>2</sup>) of
+  order q·(2·p - q), called Triton.
+
 
 ## Security and engineering properties
 
@@ -88,6 +94,9 @@ massive (about 22% the mass of Earth's moon vs Pluto's 18%).
 Correspondingly, the Pluto curve is defined over the larger base field than the
 Eris curve (p > q), but has the smaller order. The name of the Pluto curve starts
 with 'P' which is mnemonic for pairing-friendly.
+
+Triton is originally another Kuiper belt object, larger than Pluto, that was captured
+as a satellite of Neptune.
 
 
 ## Generation

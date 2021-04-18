@@ -24,6 +24,8 @@ Ep' used for G<sub>2</sub> is:
 * Ep' : y<sup>2</sup> = x<sup>3</sup> + (z + 3) over GF(p<sup>2</sup>) of
   order q·(2·p - q), called Triton.
 
+(This definition of Triton has not been finalized and is subject to change.)
+
 
 ## Security and engineering properties
 
